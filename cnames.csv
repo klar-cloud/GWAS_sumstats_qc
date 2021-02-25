@@ -1,0 +1,103 @@
+#Columns names used in the quality check: BP, CHR, ID, RSID, PVAL, A1, A2, FREQ, BETA, SE, ZSCORE, NCASES, NCONTROLS, NEFF, N
+#Please add necessary column names to this file
+
+#BP - base pair column (necessary; only exception if ID column has the format of CHR:BP)
+BP BP
+BPNUM BP
+POS BP
+
+#CHR - chromosome column (necessary; only exception if ID column is present and has the format of CHR:BP)
+CHR CHR
+CHROMOSOM CHR
+CHROM CHR
+
+#ID - identificator column (unecesary if BP and CHR)
+ID ID
+IDSNP ID
+NAME ID
+SNP ID
+MARKERNAME ID
+NAME ID
+
+#RSID - rs number column (unnecessary but advised - can be generated in next steps)
+RSID RSID
+RS RSID
+RSNUMBERS RSID
+
+#PVAL - p-value column (necessary)
+P PVAL
+PVAL PVAL
+P_VAL PVAL
+P-VALUE PVAL
+P_VALUE PVAL
+P_BOLT_LMM_INF PVAL
+P_SLEEPDURATION PVAL
+
+#A1 - effect allele column (necessary)
+A1 A1
+ALLELE1 A1
+ALLELE_1 A1
+EFFECT_ALLELE A1
+REFERENCE_ALLELE A1
+EA A1
+REF A1
+
+#A2 - non-effect allele column (necessary)
+A2 A2
+ALLELE2 A2
+ALLELE0 A2
+ALLELE_2 A2
+OTHER_ALLELE A2
+NON_EFFECT_ALLELE A2
+NEA A2
+ALT A2
+
+#FREQ - effect allele frequency column (necessary)
+FREQ FREQ
+FREQ1 FREQ
+A1FREQ FREQ
+FREQA1 FREQ
+FREQ.ALLELE1.HAPMAPCEU FREQ
+AF FREQ
+
+#BETA - beta value column (can only be skipped if ZSCORE column is present) 
+BETA BETA
+B BETA
+EFFECT BETA
+EFFECTS BETA
+BETA_SLEEPDURATION BETA
+
+#SE - beta standard deviation column (can only be skipped if ZSCORE column is present) 
+SE SE
+SD SE
+STDERR SE
+SE_SLEEPDURATION SE
+SEBETA SE
+
+#ZSCORE - z-score value column (can only be skipped if BETA and SE columns are present)
+Z-SCORE ZSCORE
+ZSCORE ZSCORE
+Z ZSCORE
+
+#NCASES - cases sample size (unneccessary if sample size is given in other way; needs the complementary column NCONTROLS)
+NCASES NCASES
+N_CASES NCASES
+N_CASE NCASES
+N_CAS NCASES
+NCASE NCASES
+CASES_N NCASES
+
+#NCONTROLS - control sample size (unneccessary if sample size is given in other way; needs the complementary column NCASES)
+NCONTROLS NCONTROLS
+N_CONTROLS NCONTROLS
+N_CONT NCASES
+N_CON NCASES
+NCONTROL NCASES
+CONTROL_N NCASES
+
+#NEFF - efficient sample size (unneccessary if sample size is given in other way)
+NEFF NEFF
+
+#N - sample size (unneccessary if sample size is given in other way; advised only for continuous traits)
+N N
+NUM_SAMPLES N
