@@ -2,21 +2,16 @@ Semi-automatic pipeline for preprocessing and harmonizing GWAS sumstats from var
 
 Column names used in the script: BP, CHR, ID, RSID, PVAL, A1, A2, FREQ, BETA, SE, ZSCORE, NCASES, NCONTROLS, NEFF, N
 
+Necessary software:
+- R >=3.5 (modules: dplyr, data.table, optparse, rlist, ggplot2, viridis, SNPlocs.Hsapiens.dbSNP144.GRCh37)
+- Python3 (modules: pandas >=1.0.0, numpy, matplotlib, argparse)
 
 To run this pipeline you need:
-- 	GWAS summary statistics (txt, csv)
-	necessary columns: BP, CHR, PVAL, A1, A2, FREQ, ZSCORE or BETA & SE
-
-- 	CNAMES file - (txt, csv; space/tab-separated) file which pairs possible unique names of sumstats columns 
-	and the names used in the script; Examplary file is provided with more detailed info how to create it. 
-
-- 	R >=3.5 (modules: dplyr, data.table, optparse, rlist, ggplot2, viridis, SNPlocs.Hsapiens.dbSNP144.GRCh37)
-
-- 	Python3 (modules: pandas >=1.0.0, numpy, matplotlib, argparse)
+- GWAS summary statistics (txt, csv) with necessary columns: BP, CHR, PVAL, A1, A2, FREQ, ZSCORE or BETA & SE
+- CNAMES file - (txt, csv; space/tab-separated) file, which pairs unique names of sumstats columns and the names used in the script; Examplary file is provided with more detailed info how to create it. 	
 
 Optional:
-- 	REFERENCE file (txt, csv) with four columns: A1_REF, A2_REF, FREQ_REF, COORDINATE
-	If not provided, script will create custom
+- REFERENCE file (txt, csv) with four columns: A1_REF, A2_REF, FREQ_REF, COORDINATE. If not provided, script will create custom reference file.
 
 
 EXAMPLE QUALITY CHECK PART1
