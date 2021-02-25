@@ -1,4 +1,4 @@
-Semi-automatic pipeline for preprocessing and harmonizing GWAS sumstats from various sources.
+Semi-automatic pipeline for preprocessing and harmonizing GWAS multiple sumstats from various sources.
 
 Column names used in the script: BP, CHR, ID, RSID, PVAL, A1, A2, FREQ, BETA, SE, ZSCORE, NCASES, NCONTROLS, NEFF, N
 
